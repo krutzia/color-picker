@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f1f5f9;
+  color: #111;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview {
+  width: 100%;
+  height: 120px;
+  border-radius: 12px;
+  margin: 15px 0;
+  border: 2px solid #ddd;
+}
+
+.sliders label {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.codes p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.copyBtn {
+  margin-left: 10px;
+  padding: 4px 8px;
+  border: none;
+  background: #0ea5e9;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copyBtn:hover {
+  background: #0284c7;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.actions button {
+  flex: 1;
+  min-width: 30%;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.actions button:hover {
+  background: #4f46e5;
+}
+
+#shades, #palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.shadeBox, .colorBox {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.shadeBox:hover, .colorBox:hover {
+  transform: scale(1.05);
+}
+
+/* 🌙 DARK THEME */
+body.dark {
+  background: #0f172a;
+  color: #f9fafb;
+}
+
+body.dark .container {
+  background: #1e293b;
+}
+
+body.dark input, body.dark button {
+  background: #334155;
+  color: #f9fafb;
+  border-color: #475569;
+}
+
+body.dark .copyBtn {
+  background: #2563eb;
+}
+
+body.dark .actions button {
+  background: #3b82f6;
+}
+
+
+
+
+
+
+
+
+
